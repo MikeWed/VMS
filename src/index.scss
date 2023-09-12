@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600:800&family=Quicksand:wght@400;500;600;700&display=swap');
+
+$breakpoint1: 600px;
+$breakpoint2: 800px;
+
+$maxWidth: 1280px;
+$contentWidth: 1140px;
+
+:root {
+  // font-family: ;
+  // font-weight: 400;
+
+  // font-synthesis: none;
+  // text-rendering: optimizeLegibility;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  // -webkit-text-size-adjust: 100%;
+
+
+  // colors
+  --mossGreen: #679146;
+  --saddleTan: #8B4513;
+  --whitewashedCream: #F5F5F5;
+  --darkGrey: #333333;
+  --shadow: #0000001e;
+  margin: 0 auto;
+  background-color: var(--whitewashedCream);
+  
+}
+
+* , button{
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  font-family: 'Crimson Text', serif;
+  text-transform: uppercase;
+  color: var(--whitewashedCream);
+  background-color: var(--mossGreen);
+  border: none;
+  padding: 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #8B4513;
+  }
+}
