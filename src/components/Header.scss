@@ -14,7 +14,7 @@ header {
             width: 100%;
             object-fit: contain;
 
-            @media  screen and (max-width: 500px) and (max-aspect-ratio: 0.5) {
+            @media  screen and (max-width: 500px) and (max-aspect-ratio: 0.55) {
                 width: 150%;
                 transform: translateX(-7%);
             }
