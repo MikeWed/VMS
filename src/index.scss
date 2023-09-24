@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600:800&family=Quicksand:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+
 
 $breakpoint1: 600px;
-$breakpoint2: 800px;
+$breakpoint2: 1000px;
 
-$maxWidth: 1280px;
-$contentWidth: 1140px;
+$maxWidth1: 1140px;
+$contentWidth: 2500px;
+
+$navbarHeight: 69px;
 
 :root {
   // font-family: ;
@@ -25,7 +30,7 @@ $contentWidth: 1140px;
   --shadow: #0000001e;
   margin: 0 auto;
   background-color: var(--whitewashedCream);
-  
+  font-family: 'Montserrat', sans-serif;
 }
 
 * , button{
@@ -33,6 +38,19 @@ $contentWidth: 1140px;
   font-size: 16px;
   padding: 0;
   margin: 0;
+}
+
+.section-header {
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-top: 3rem;
+  text-align: center;
 }
 
 button {

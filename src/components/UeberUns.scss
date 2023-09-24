@@ -1,0 +1,9 @@
+@import '../index.scss';
+
+.ueberUns {
+
+    & p{
+        text-align: justify;
+        padding: 1.5rem;
+    }
+}
