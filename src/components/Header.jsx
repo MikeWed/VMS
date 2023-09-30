@@ -10,12 +10,13 @@ export default function Header() {
 
       <div className="hero-container">
         <img src={hero} alt="hero-img" />
-        <h1 className='title'>Vielseitige Ausbildung von Pferd und Reiter  
-          <span> im Herzen der Mecklenburgischen Schweiz</span>
-        </h1>
-        <h2 className='title'>mit dem Pferd im Vordergrund</h2>
+        <div className="title">
+          <h1>Vielseitige Ausbildung von Pferd und Reiter im Herzen der Mecklenburgischen Schweiz
+          </h1>
+          <h2>mit dem Pferd im Vordergrund</h2>
+        </div>
         <div className="cta-text">
-          <p>Dein Pferd braucht einen Platz zum unterstellen?</p>
+          <p>Dein Pferd braucht einen Platz zum Unterstellen?</p>
           <p>Du willst in den Vielseitigkeitssport einsteigen oder dein Können auf ein neues Level heben?</p>
           <p>Du brauchst Hilfe bei der Aufzucht oder dem Anreiten?</p>
           <button>Schreib uns</button>
