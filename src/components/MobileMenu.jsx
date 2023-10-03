@@ -8,6 +8,7 @@ export default function MobileMenu() {
             <a href="#">über uns</a>
             <a href="#">unser Angebot</a>
             <a href="#">unser Hof</a>
+            <a href="">Schreib uns</a>
         </div>
     </div>
   )

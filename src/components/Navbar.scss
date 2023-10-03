@@ -4,6 +4,10 @@
 
 .nav {
     box-shadow: 0px 4px 8px rgba($color: #000000, $alpha: 0.16);
+    position: fixed;
+    top: 0;
+    background-color: var(--whitewashedCream);
+    width: 100%;
     height: $navbarHeight;
     font-size: 16px;
     text-align: center;

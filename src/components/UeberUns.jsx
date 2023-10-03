@@ -7,7 +7,7 @@ import jule from '../assets/Jule.jpg'
 
 export default function UeberUns() {
   return (
-    <section className='ueberUns'>
+    <section id='ueberUns'>
       <div className="wrapper">
         <h1 className='section-header'>
             über uns

@@ -7,7 +7,7 @@
     display: none;
 
     & .dropdown {
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
         width: 80%;
@@ -15,9 +15,10 @@
         transform: translate(-50%, 10px);
         text-align: center;
         background-color: var(--whitewashedCream);
-        z-index: -10;
+        z-index: 1000;
         box-shadow: 0 8px 8px var(--shadow);
         border-radius: 11px;
+        overflow: hidden;
     
         & a {
             line-height: 60px;
@@ -31,6 +32,11 @@
         
         & a:not(:last-child){
             border-bottom: 2px solid lightgrey;            
+        }
+
+        & a:last-child{
+            background-color: var(--mossGreen);
+            color: var(--whitewashedCream);
         }
         
     }
