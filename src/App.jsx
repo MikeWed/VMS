@@ -4,6 +4,7 @@ import MobileMenu from './components/MobileMenu'
 import Header from './components/Header'
 import UeberUns from './components/UeberUns'
 import Angebote from './components/Angebote'
+import Hof from './components/Hof'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Header/>
       <UeberUns/>
       <Angebote/>
+      <Hof/>
     </>
   )
 }

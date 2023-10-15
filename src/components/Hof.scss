@@ -1,0 +1,68 @@
+@import '../index.scss';
+
+#hof {
+    // height: calc(100dvh - $navbarHeight);
+    background-image: url('../assets/hof_bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding-block: 2rem;
+    max-width: $maxWidth1;
+    margin: 0 auto;
+
+    & img{
+        width: 100%;
+        border: 3px solid var(--saddleTan);
+    }
+    
+    & h3 {
+        padding-block: 1rem;
+        color: var(--whitewashedCream);
+    }
+    & p{
+        text-align: justify;
+        padding-bottom: 2rem;
+        color: var(--whitewashedCream);
+    }
+
+    & swiper-container {
+
+        // --swiper-pagination-color: var(--mossGreen);
+        --swiper-pagination-color: var(--whitewashedCream);
+        // --swiper-navigation-color: var(--mossGreen);
+        --swiper-navigation-color: var(--whitewashedCream);
+        --swiper-navigation-size: 25px;
+
+        & swiper-slide {
+            padding: 3rem;
+        }
+    }
+    
+
+    @media screen and (min-width: $breakpoint2){
+        background-size: 110%;
+        background-position: left center;
+
+        & swiper-container {
+
+            --swiper-navigation-size: 40px;
+
+            & swiper-slide {
+                padding: 4rem;
+    
+                & .hof-slide {
+                    display: flex;
+                    gap: 2rem;
+                    align-items: center;
+        
+                    & .hof-slide-text {
+                        flex-basis: 100%;
+                        & h3 {
+                        color: var(--whitewashedCream);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
