@@ -31,6 +31,7 @@ $navbarHeight: 69px;
   margin: 0 auto;
   background-color: var(--whitewashedCream);
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 
@@ -46,12 +47,13 @@ $navbarHeight: 69px;
   font-weight: 600;
   font-size: 28px;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-block: 1rem;
 }
 
 section {
   // margin-top: 3rem;
   text-align: center;
+  // margin-top: 5rem;
 }
 
 button {

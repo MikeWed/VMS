@@ -7,14 +7,17 @@ export default function Navbar() {
   return (
     <div className='nav'>
         <div className="nav-inner">
-            <div className='nav_logo'>
+            <a href="#" className='nav_logo'>
+            {/* <div className='nav_logo'> */}
                 <img src={horse_logo} alt="logo" className='nav_horse_logo' />
                 <img src={text_logo} alt="text logo" className='nav_text_logo' />
-            </div>
+            {/* </div> */}
+
+            </a>
             <div className="menus">
-                <a href="#">über uns</a>
-                <a href="#">unser angebot</a>
-                <a href="#">unser hof</a>
+                <a href="#ueberUns">über uns</a>
+                <a href="#angebote">unser angebot</a>
+                <a href="#hof">unser hof</a>
             </div>
             <button>Schreib uns</button>
             <div id="hamburger">

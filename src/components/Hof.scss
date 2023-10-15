@@ -5,12 +5,14 @@
     background-image: url('../assets/hof_bg.jpg');
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
     padding-block: 2rem;
     max-width: $maxWidth1;
     margin: 0 auto;
 
     & img{
         width: 100%;
+        display: block;
         border: 3px solid var(--saddleTan);
     }
     
@@ -53,9 +55,13 @@
                     display: flex;
                     gap: 2rem;
                     align-items: center;
+                    flex: 1;
         
+                    & .hof-slide-item {
+                        width: 50%;
+                    }
                     & .hof-slide-text {
-                        flex-basis: 100%;
+                        // flex-basis: 100%;
                         & h3 {
                         color: var(--whitewashedCream);
                         }

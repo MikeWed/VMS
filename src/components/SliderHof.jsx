@@ -42,8 +42,8 @@ export default function SliderHof() {
         >
                 <swiper-slide>
                     <div className="hof-slide">
-                        <img src={hof1} alt="" />
-                        <div className="hof-slide-text">
+                        <img src={hof1} alt="" className='hof-slide-item'/>
+                        <div className="hof-slide-text hof-slide-item">
                             <h3>Lorem, ipsum.</h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sequi dolor, quo non quibusdam asperiores sit harum sapiente, corrupti amet similique minima pariatur natus commodi molestias ipsam provident aspernatur assumenda.</p>
                         </div>
@@ -51,8 +51,8 @@ export default function SliderHof() {
                 </swiper-slide>
                 <swiper-slide>
                     <div className="hof-slide">
-                        <img src={hof2} alt="" />
-                        <div className="hof-slide-text">
+                        <img src={hof2} alt=""  className='hof-slide-item' />
+                        <div className="hof-slide-text hof-slide-item">
                             <h3>Lorem, ipsum.</h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sequi dolor, quo non quibusdam asperiores sit harum sapiente, corrupti amet similique minima pariatur natus commodi molestias ipsam provident aspernatur assumenda.</p>
                         </div>
@@ -60,8 +60,8 @@ export default function SliderHof() {
                 </swiper-slide>
                 <swiper-slide>
                     <div className="hof-slide">
-                        <img src={hof3} alt="" />
-                        <div className="hof-slide-text">
+                        <img src={hof3} alt=""  className='hof-slide-item'/>
+                        <div className="hof-slide-text hof-slide-item">
                             <h3>Lorem, ipsum.</h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sequi dolor, quo non quibusdam asperiores sit harum sapiente, corrupti amet similique minima pariatur natus commodi molestias ipsam provident aspernatur assumenda.</p>
                         </div>
