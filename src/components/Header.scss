@@ -49,15 +49,17 @@ header {
 
         & .cta-text {
             padding: 1rem 2rem;
-            font-size: 16px;
+            // font-size: 16px;
             text-align: center;
             
-            & p{
+            & p {
                 margin-bottom: 1rem;
+                font-size: 16px;
                 text-align: center;
             }
 
-            & button {
+            & .button {
+                display: inline-block;
                 margin-top: 1rem;
             }
         }
@@ -135,7 +137,7 @@ header {
                 padding: 0;
                 
                 & p{
-                    font-size: clamp(16px, 1.4vw, 30px);
+                    font-size: clamp(14px, 1.2vw, 24px);
                     text-align: right;
                 }
             }

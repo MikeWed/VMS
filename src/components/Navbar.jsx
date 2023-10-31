@@ -19,7 +19,7 @@ export default function Navbar() {
                 <a href="#angebote">unser angebot</a>
                 <a href="#hof">unser hof</a>
             </div>
-            <button>Schreib uns</button>
+            <a href='#contact' className='button'>Schreib uns</a>
             <div id="hamburger">
                 <div className='stripe'></div>
                 <div className='stripe'></div>

@@ -1,0 +1,23 @@
+@import '../index.scss';
+
+#partner{
+    max-width: $maxWidth1;
+    margin: 0 auto;
+    & .partner-container {
+        width: 100%;
+        // padding-inline: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2rem;
+        // flex-direction: column;
+        // padding-inline: 1rem;
+        
+            
+        & .partner-logo {
+            width: 150px;
+        }
+
+    }
+}

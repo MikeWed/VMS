@@ -1,0 +1,91 @@
+@import '../index.scss';
+
+#contact{
+    max-width: $maxWidth1;
+    margin: 0 auto;
+    width: 100%;
+
+    & .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+
+        & #horseContact {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        & .wrapper-message {
+
+            max-width: 700px;
+
+            & .contact-message {
+                margin-top: 1rem;
+                width: 100%;
+                line-height: 150%;
+    
+                & .contact-social {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    gap: 1rem;
+                    padding-top: 1rem;
+    
+                    & img{
+                        width: 35px;
+                    }
+                }
+            }
+    
+            & .form-wrapper {
+                margin-top: 2rem;
+                text-align: left;
+                width: 100%;
+    
+                & .form-container {
+                    margin-bottom: 1rem;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+    
+                    & label {
+                        line-height: 180%;
+                    }
+    
+                    & input, textarea{
+                        border: 3px solid var(--mossGreen);
+                        border-radius: 5px;
+                        // line-height: 30px;
+                        padding: 0.5rem;
+                        outline: none;
+    
+                        &:focus {
+                            border: 3px solid var(--saddleTan);
+                        }
+                    }
+    
+                    & #anliegen{
+                        resize: none;
+                    }
+                }
+        }
+
+
+        }
+
+        @media screen and (min-width: $breakpoint2) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+            gap: 1rem;
+
+            & .wrapper-message {
+                max-width: unset;
+                width: 50%;
+            }
+        }
+    }
+}

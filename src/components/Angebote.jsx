@@ -36,7 +36,7 @@ export default function Angebote() {
                 <p>Jungpferdeaufzucht</p>
             </div>
             <div className="angebot angebot-button">
-                <button>Schreib uns</button>
+                <a href='#contact' className='button'>Schreib uns</a>
             </div>
         </div>
     </section>

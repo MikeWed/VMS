@@ -47,16 +47,17 @@ $navbarHeight: 69px;
   font-weight: 600;
   font-size: 28px;
   text-transform: uppercase;
-  margin-block: 1rem;
+  margin-block: 1rem 3rem;
 }
 
 section {
   // margin-top: 3rem;
+  padding: 4rem 2rem 0;
   text-align: center;
   // margin-top: 5rem;
 }
 
-button {
+.button {
   font-family: 'Crimson Text', serif;
   text-transform: uppercase;
   color: var(--whitewashedCream);
@@ -66,6 +67,7 @@ button {
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-decoration: none;
 
   &:hover {
     background-color: #8B4513;

@@ -16,10 +16,14 @@ export default function Header() {
           <h2>mit dem Pferd im Vordergrund</h2>
         </div>
         <div className="cta-text">
-          <p>Dein Pferd braucht einen Platz zum Unterstellen?</p>
-          <p>Du willst in den Vielseitigkeitssport einsteigen oder dein Können auf ein neues Level heben?</p>
-          <p>Du brauchst Hilfe bei der Aufzucht oder dem Anreiten?</p>
-          <button>Schreib uns</button>
+          <p>Herzlich Willkommen ihr Wichser</p>
+          <p className='introduction'>
+Im Herzen der Mecklenburgischen Seenplatte gelegen bietet unsere Reitanlage alles, was das
+Pferde Herz höherschlagen lässt. Aber auch als Reiter kommt bei uns jeder auf seine kosten.
+Egal ob Dressur, Springen oder Geländereiten, bei uns finden Sie die optimalen
+Trainingsbedingungen. Insbesondere die vielseitige Ausbildung von Pferd und Reiter liegt uns
+dabei am Herzen.</p>
+          <a href='#contact' className='button'>Schreib uns</a>
         </div>
       </div>
 

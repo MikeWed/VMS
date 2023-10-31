@@ -71,7 +71,7 @@
             }
         }
 
-        & button {
+        & .button {
             display: none;
             @media screen and (min-width: $breakpoint2) {
                 display: block;

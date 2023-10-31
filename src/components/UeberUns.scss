@@ -4,17 +4,17 @@
     width: 100%;
     margin: 0;
     // background: linear-gradient(90deg, rgba(103,145,70,1) 0%, rgba(127,175,89,1) 100%);
-    padding-top: 2rem;
+    padding-inline: 0;
     color: var(--darkGrey);
     
     & .wrapper {
         max-width: $maxWidth1;
         margin: 0 auto;
-        padding-block: 2rem 0rem;
+        // padding-block: 2rem 0rem;
         
         & p{
             text-align: justify;
-            padding: 2rem;
+            padding-inline: 2rem;
             line-height: 125%;
         }
         
@@ -32,6 +32,10 @@
                     font-weight: 600;
                     font-size: 24px;
                 }
+
+                & p {
+                    padding-top: 1rem;
+                }
                 & .avatar {
                     width: 100%;
                     object-fit: fit;
@@ -48,7 +52,7 @@
 
             .wir-item2, .wir-item4{
                 background: linear-gradient(90deg, rgba(103,145,70,1) 0%, rgba(138,182,103,1) 100%);
-                padding-top: 2rem;
+                padding: 2rem 0;
             }
     
             
@@ -57,7 +61,7 @@
 
             padding-bottom: 0;
             & >p {
-                padding: 2rem 0;
+                padding-block: 0 2rem;
             }
             & .wir-container{
                 display: grid;            
