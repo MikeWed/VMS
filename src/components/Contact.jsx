@@ -1,5 +1,5 @@
 import React from 'react'
-import './contact.scss'
+import './Contact.scss'
 import horseContact from '../assets/horseGlasses.png'
 import instagram from '../assets/insta.svg'
 import facebook from '../assets/facebook.svg'
