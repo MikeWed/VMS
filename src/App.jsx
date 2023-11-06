@@ -6,7 +6,7 @@ import Header from './components/Header'
 import UeberUns from './components/UeberUns'
 import Angebote from './components/Angebote'
 import Hof from './components/Hof'
-import Partner from './components/partner'
+import Partner from './components/Partner'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
