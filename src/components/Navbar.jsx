@@ -3,7 +3,10 @@ import './Navbar.scss'
 import horse_logo from '../assets/logo_horse_green.svg'
 import text_logo from '../assets/logo_text_green.svg'
 
-export default function Navbar() {
+export default function Navbar({
+    mobileMenu,
+    handleMobileMenu
+}) {
   return (
     <div className='nav'>
         <div className="nav-inner">
@@ -20,7 +23,7 @@ export default function Navbar() {
                 <a href="#hof">unser hof</a>
             </div>
             <a href='#contact' className='button'>Schreib uns</a>
-            <div id="hamburger">
+            <div id="hamburger" onClick={() => handleMobileMenu(!mobileMenu)}>
                 <div className='stripe'></div>
                 <div className='stripe'></div>
                 <div className='stripe'></div>

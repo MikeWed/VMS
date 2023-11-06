@@ -1,4 +1,5 @@
 import './App.scss'
+import { useState } from 'react'
 import Navbar from './components/Navbar'
 import MobileMenu from './components/MobileMenu'
 import Header from './components/Header'
@@ -10,11 +11,17 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
     <>
-      <Navbar/>
-      <MobileMenu/>      
+      <Navbar
+        mobileMenu = {mobileMenu}
+        handleMobileMenu = {setMobileMenu}
+      />
+      <MobileMenu
+        mobileMenu = {mobileMenu}
+      />      
       <Header/>
       <UeberUns/>
       <Angebote/>
