@@ -10,6 +10,7 @@ import Partner from './components/Partner'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
+
 function App() {
   const [mobileMenu, setMobileMenu] = useState(false);
 

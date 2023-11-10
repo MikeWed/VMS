@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.scss'
 import horse_logo from '../assets/logo_horse_green.svg'
 import text_logo from '../assets/logo_text_green.svg'
+import {motion} from "framer-motion"
 
 export default function Navbar({
     mobileMenu,
@@ -24,9 +25,30 @@ export default function Navbar({
             </div>
             <a href='#contact' className='button'>Schreib uns</a>
             <div id="hamburger" onClick={() => handleMobileMenu(!mobileMenu)}>
-                <div className='stripe'></div>
-                <div className='stripe'></div>
-                <div className='stripe'></div>
+                <motion.div 
+                    className='stripe'
+                    style= {{
+                        transformOrigin: 'top left'
+                    }}
+                    initial = {{rotate : 0}}
+                    animate = { mobileMenu ? {rotate : 45} : {rotate : 0} }
+                    transition = {{duration : 0.5}} 
+                ></motion.div>
+                <motion.div 
+                    className='stripe'
+                    initial = {{opacity : 1}}
+                    animate = { mobileMenu ? {opacity : 0} : {opacity : 1} }
+                    transition = {{duration : 0.5}} 
+                ></motion.div>
+                <motion.div 
+                    className='stripe'
+                    style= {{
+                        transformOrigin: 'bottom left'
+                    }}
+                    initial = {{rotate : 0}}
+                    animate = { mobileMenu ? {rotate : -45} : {rotate : 0} }
+                    transition = {{duration : 0.5}} 
+                ></motion.div>
             </div>
         </div>
     </div>
