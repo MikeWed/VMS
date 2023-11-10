@@ -4,7 +4,8 @@
 
 .MobileMenu{
     position: relative;
-    display: none;
+    display: block;
+    // display: none;
 
     & .dropdown {
         position: fixed;

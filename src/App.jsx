@@ -18,9 +18,10 @@ function App() {
       <Navbar
         mobileMenu = {mobileMenu}
         handleMobileMenu = {setMobileMenu}
-      />
+        />
       <MobileMenu
         mobileMenu = {mobileMenu}
+        handleMobileMenu = {setMobileMenu}
       />      
       <Header/>
       <UeberUns/>

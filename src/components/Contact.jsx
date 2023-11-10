@@ -25,7 +25,6 @@ export default function Contact() {
                 <form className='form-wrapper' action="">
                     <div className="form-container container-name">
                         <label htmlFor="name">Dein Name</label>
-                        <br />
                         <input type="text" name="name" id="name" />
                     </div>
                     <div className="form-container container-email">
