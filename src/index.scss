@@ -23,6 +23,7 @@ $navbarHeight: 69px;
 
 
   // colors
+  --arrowPos: 320px;
   --mossGreen: #679146;
   --saddleTan: #8B4513;
   --whitewashedCream: #F5F5F5;
@@ -42,13 +43,17 @@ $navbarHeight: 69px;
   margin: 0;
 }
 
-.section-header {
+
+.title-letter {
+
+  // display: block;
   font-family: 'Crimson Text', serif;
   font-weight: 600;
   font-size: 28px;
   text-transform: uppercase;
   margin-block: 1rem 3rem;
 }
+
 
 section {
   // margin-top: 3rem;

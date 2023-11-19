@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Die Reithalle",
+        "content": "Eingebettet in die wunderschöne Natur der Mecklenburgischen Seenplatte finden Sie unsere idyllische Reitanlage.",
+        "img": "src/assets/hof1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Die Ställe",
+        "content": "Direkt an unserer freundlichen 20x45m Reithalle mit Nordsand stehen 11 helle Fensterboxen zur Verfügung. Der Hauptstall verfügt außerdem über ein Pferdesolarium, einen Heubedampfer, eine Waschbox sowie eine beheizte Sattelkammer und ein WC. Bei bedarf kann auch ein Inhalationsgerät oder eine Activomed Magnetfelddecke ausgeliehen werden. ",
+        "img": "src/assets/hof2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Die Scheune",
+        "content": "In unserer Scheune finden sich drei weitere große Boxen, sowie drei extra große Laufboxen für Jungpferde. ",
+        "img": "src/assets/hof3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Viel Grünland",
+        "content": "Insgesamt stehen uns 28ha Grünland zur Verfügung, sodass wir gewährleisten können, dass alle Pferde täglich und ganztags auf die Weide können, selbst im Winter. ",
+        "img": "src/assets/hof3.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Unser Reitplatz",
+        "content": "Auf dem Außengelände lädt ein 30x60m großer Reitplatz zum Trainieren ein, und natürlich das Herzstück unserer Anlage, der Geländeplatz. Auf ca. 4ha findet sich alles, was das Buschreiter Herz begehrt, von den ersten kleinen Baumstämmen bis hin zu 4* Hindernissen. Gräben, Wasser, Auf und Absprünge sind in allen Formen vertreten.",
+        "img": "src/assets/hof3.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Viel Natur",
+        "content": "Wer es etwas gemütlicher mag, kann direkt vom Hof aus die herrliche Natur bei einem ausgedehnten Ausritt genießen. ",
+        "img": "src/assets/hof3.jpg"
+    }
+]

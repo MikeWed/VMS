@@ -7,19 +7,19 @@ export default function MobileMenu({
   handleMobileMenu
 }) {
 
-  useEffect(() => {
-    console.log(mobileMenu)
-  }, [mobileMenu])
+  // useEffect(() => {
+  //   console.log(mobileMenu)
+  // }, [mobileMenu])
 
   return (
     <div className="MobileMenu">
         <motion.div 
           className='dropdown'
-          initial={{ opacity: 0, x: "-50%", y: -100 }}
-          animate={mobileMenu ? { opacity: 1, y: 10} : { opacity: 0, y: -100}}
+          initial={{ opacity: 0, x: "-50%", y: -250 }}
+          animate={mobileMenu ? { opacity: 1, y: 10} : { opacity: 0, y: -250}}
           exit={{ opacity: 0, x: -100, left: '-100%' }}
           transition={{ duration: 0.5 }}
-          onClick={() => handleMobileMenu(!mobileMenu)}
+          onClick={() => handleMobileMenu(false)}
           >
             <a href="#ueberUns">über uns</a>
             <a href="#angebote">unser Angebot</a>

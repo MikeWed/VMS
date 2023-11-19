@@ -1,22 +1,40 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Navbar.scss'
 import horse_logo from '../assets/logo_horse_green.svg'
 import text_logo from '../assets/logo_text_green.svg'
-import {motion} from "framer-motion"
+import {motion, useAnimation} from "framer-motion"
 
 export default function Navbar({
     mobileMenu,
     handleMobileMenu
 }) {
+
+    const controls = useAnimation();
+    useEffect(() => {
+        const startVibration = () => {
+        controls.start({
+            y: [0, -5, 5, -5, 5, 0], // Keyframes for the x-axis vibration
+            transition: { duration: 0.5, repeat: Infinity, repeatType: 'mirror' }, // Animation configuration
+        });
+        };
+          // Stop the vibration after 2 seconds
+          setTimeout(() => {
+            controls.stop();
+          }, 1000);
+
+        startVibration();
+    }, [controls]);
+    
+
   return (
     <div className='nav'>
         <div className="nav-inner">
             <a href="#" className='nav_logo'>
-            {/* <div className='nav_logo'> */}
-                <img src={horse_logo} alt="logo" className='nav_horse_logo' />
+                <motion.img src={horse_logo} 
+                    alt="logo"
+                    animate={controls}  
+                    className='nav_horse_logo' />
                 <img src={text_logo} alt="text logo" className='nav_text_logo' />
-            {/* </div> */}
-
             </a>
             <div className="menus">
                 <a href="#ueberUns">über uns</a>
@@ -24,7 +42,7 @@ export default function Navbar({
                 <a href="#hof">unser hof</a>
             </div>
             <a href='#contact' className='button'>Schreib uns</a>
-            <div id="hamburger" onClick={() => handleMobileMenu(!mobileMenu)}>
+            <div id="hamburger" onClick={() => handleMobileMenu(!mobileMenu)}> 
                 <motion.div 
                     className='stripe'
                     style= {{

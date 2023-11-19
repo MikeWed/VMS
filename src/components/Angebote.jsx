@@ -1,44 +1,52 @@
-import React from 'react'
+import { useState } from 'react'
 import './Angebote.scss'
-import angebot_img from '../assets/angebotTest.jpg'
+import angebote from "../data/angebote.json"
+import {motion} from "framer-motion"
+import ModalAngebote from './ModalAngebote'
+import Title from '../utils/Title'
+
 
 export default function Angebote() {
+    const [seeOffer, setSeeOffer] = useState(0);
+    // console.log(seeOffer)
+
+    const title = "Unser Angebot"
+
+    const meineAngebote = angebote.map(angebot => (
+        <motion.div 
+            className='angebot' 
+            key={angebot.id}
+            onClick={() => setSeeOffer(angebot.id)}
+            whileHover={{scale: 1.05}}
+            transition={{type: "spring", stiffness: 200, damping: 9}}
+            whileInView={{
+                opacity: 1,
+                transition: {duration: 0.5,},
+            }}
+            initial= {{opacity: 0,}}
+
+        >
+            <div className='angebot-inner'>
+                    <img src={angebot.img}/>
+                    <p className='front-title'>{angebot.title}</p>
+            </div>
+        </motion.div>
+    ))
+
   return (
     <section id='angebote'>
-        <h1 className='section-header'>Unser Angebot</h1>
+        {/* <h1 className='section-header'>Unser Angebot</h1> */}
+        <Title text= {title}/>
         <div className="angebote-wrapper">
-            <div className="angebot angebot1">
-                <img src={angebot_img} alt="" />
-                <p>anreiten</p>
-            </div>
-            <div className="angebot angebot2">
-                <img src={angebot_img} alt="" />
-                <p>Ausbildung</p>
-            </div>
-            <div className="angebot angebot3">
-                <img src={angebot_img} alt="" />
-                <p>internationale Turniere</p>
-            </div>
-            <div className="angebot angebot4">
-                <img src={angebot_img} alt="" />
-                <p>Stutenleistungsprüfung</p>
-            </div>
-            <div className="angebot angebot5">
-                <img src={angebot_img} alt="" />
-                <p>problempferde</p>
-            </div>
-            <div className="angebot angebot6">
-                <img src={angebot_img} alt="" />
-                <p>verkauf</p>
-            </div>
-            <div className="angebot angebot7">
-                <img src={angebot_img} alt="" />
-                <p>Jungpferdeaufzucht</p>
-            </div>
+            {meineAngebote}
             <div className="angebot angebot-button">
                 <a href='#contact' className='button'>Schreib uns</a>
             </div>
         </div>
+        <ModalAngebote
+            seeOffer= {seeOffer}
+            setSeeOffer= {setSeeOffer}
+        />
     </section>
   )
 }

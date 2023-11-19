@@ -1,13 +1,17 @@
 import React from 'react'
 import './Contact.scss'
+import Title from '../utils/Title'
 import horseContact from '../assets/horseGlasses.png'
 import instagram from '../assets/insta.svg'
 import facebook from '../assets/facebook.svg'
 
 export default function Contact() {
+
+    const title = "Kontakt"
+    
   return (
     <section id='contact'>
-        <h1 className='section-header'>Kontakt</h1>
+        <Title text = {title}/>
         <div className="contact-container">
             <img id='horseContact' src={horseContact} alt="image horse" />
 
