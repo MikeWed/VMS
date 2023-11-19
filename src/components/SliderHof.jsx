@@ -1,20 +1,18 @@
 import React from 'react'
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { register } from 'swiper/element/bundle';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import hof from "../data/hof.json"
-
-
 import './Hof.scss'
-import hof1 from '../assets/hof1.jpg'
-import hof2 from '../assets/hof2.jpg'
-import hof3 from '../assets/hof3.jpg'
+
 
 register();
 
 export default function SliderHof() {
 
     const swiperElRef = useRef(null);
+    const [offers, setOffers] = useState([]);
+
 
     useEffect(() => {
         // listen for Swiper events using addEventListener
@@ -26,6 +24,11 @@ export default function SliderHof() {
         swiperElRef.current.addEventListener('slidechange', (e) => {
         // console.log('slide changed');
         });
+
+        fetch('/data/hof.json') 
+        .then((response) => response.json())
+        .then((data) => setOffers(data))
+        .catch((error) => console.error('Error fetching offers:', error));
     }, []);
 
     const meinHof = hof.map(hof => (

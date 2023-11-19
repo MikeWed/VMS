@@ -13,7 +13,7 @@ const layoutId = "animated-title";
       opacity: 1,
       x: 0,
       y: 0,
-      transition: { staggerChildren: .1, delayChildren: 0.1, staggerDirection: 1 },
+      transition: { staggerChildren: .05, delayChildren: 0.1, staggerDirection: 1 },
     }),
   };
 
