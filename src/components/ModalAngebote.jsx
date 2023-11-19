@@ -1,5 +1,5 @@
 import React from 'react'
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import "./ModalAngebote.scss"
 import cross from '../assets/cross_icon.svg'
 // import { Swiper, SwiperSlide} from 'swiper/react';
@@ -7,13 +7,16 @@ import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import angebote from "../data/angebote.json"
 import {motion } from "framer-motion"
+import { Modal } from 'flowbite-react';
 
 
 
 
 export default function ModalAngebote({
     seeOffer,
-    setSeeOffer
+    setSeeOffer,
+    openModal,
+    setOpenModal
 }) {
 
     const swiperRef = useRef(null);
@@ -21,10 +24,22 @@ export default function ModalAngebote({
    
     useEffect(() => { 
 
-        swiperRef.current.swiper.slideTo(seeOffer - 1);
+        setTimeout(() => {
+            if (swiperRef.current) {
+              swiperRef.current.swiper.slideTo(seeOffer - 1,0);
+            }
+        }, 0);
 
     }, [seeOffer, swiperRef]);
 
+
+    // const [swiperRef, setSwiperRef] = useState(null);
+
+    // useEffect(() => {
+    //   if (swiperRef) {
+    //     swiperRef.swiper.slideTo(seeOffer - 1);
+    //   }
+    // }, [seeOffer, swiperRef]);
 
     const meineAngebote = angebote.map(angebot => (
         <swiper-slide 
@@ -39,6 +54,9 @@ export default function ModalAngebote({
 
 
     return (
+
+        <Modal dismissible show={openModal} onClose={() => setOpenModal(false)} style={{zIndex: "100"}}>
+
         <motion.div className='modalAngeboteWrapper'
             style={seeOffer > 0 ? {display: "flex"} : {display: "none"}}
         >
@@ -48,7 +66,12 @@ export default function ModalAngebote({
                 initial={{scale: 0}}
                 animate={seeOffer > 0 ? {scale : 1} : {scale : 0}}
             >
-                <img src={cross} className='modal-cross' onClick={() => setSeeOffer(0)}/>
+                <img src={cross} className='modal-cross' 
+                    onClick={(e) => {
+                        setSeeOffer(0),
+                        setOpenModal(false)
+                    }}
+                />
                     <swiper-container
                         ref={swiperRef}
                         auto-height= "false"        
@@ -67,11 +90,7 @@ export default function ModalAngebote({
 
             </motion.div>
         </motion.div>
+        </Modal>
     )
 }
 
-<div className="modalAngeboteWrapper">
-    <div className="modalAngeboteCard">
-
-    </div>
-</div>

@@ -4,11 +4,13 @@ import angebote from "../data/angebote.json"
 import {motion} from "framer-motion"
 import ModalAngebote from './ModalAngebote'
 import Title from '../utils/Title'
+import { Modal } from 'flowbite-react'
 
 
 export default function Angebote() {
     const [seeOffer, setSeeOffer] = useState(0);
     const [offers, setOffers] = useState([]);
+    const [openModal, setOpenModal] = useState(false);
 
     const title = "Unser Angebot"
 
@@ -25,7 +27,10 @@ export default function Angebote() {
         <motion.div 
             className='angebot' 
             key={angebot.id}
-            onClick={() => setSeeOffer(angebot.id)}
+            onClick={() => {
+                setSeeOffer(angebot.id),
+                setOpenModal(true)
+            }}
             whileHover={{scale: 1.05}}
             transition={{type: "spring", stiffness: 200, damping: 9}}
             whileInView={{
@@ -46,6 +51,7 @@ export default function Angebote() {
     <section id='angebote'>
         {/* <h1 className='section-header'>Unser Angebot</h1> */}
         <Title text= {title}/>
+
         <div className="angebote-wrapper">
             {meineAngebote}
             <div className="angebot angebot-button">
@@ -55,6 +61,8 @@ export default function Angebote() {
         <ModalAngebote
             seeOffer= {seeOffer}
             setSeeOffer= {setSeeOffer}
+            openModal={openModal}
+            setOpenModal = {setOpenModal}
         />
     </section>
   )
