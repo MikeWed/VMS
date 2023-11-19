@@ -3,29 +3,29 @@
         "id": 1,
         "title": "Training",
         "content": "Egal ob Sie in die Vielseitigkeit hineinschnuppern möchten oder bereits Turniererfahren sind und sich auf die nächste Prüfung vorbereiten wollen, bei uns sind Sie an der richtigen Stelle. Wir bieten Training vom Anfänger bis Klasse M in den Disziplinen Dressur, Springen und natürlich Gelände an.",
-        "img": "src/assets/angebotTest.jpg"
+        "img": "../src/assets/angebotTest.jpg"
     },
     {
         "id": 2,
         "title": "Beritt",
         "content": "Wir bieten Ihnen Beritt vom Anreiten bis zur Vorstellung im internationalen Turniersport, aber auch „Problempferde“ sind bei uns jederzeit willkommen. Besonders wichtig ist uns die alters- und typgerechte Ausbildung der Pferde, bei der insbesondere die artgerechte Haltung jederzeit gewährleistet ist.",
-        "img": "src/assets/angebotTest.jpg"
+        "img": "../src/assets/angebotTest.jpg"
     },
     {
         "id": 3,
         "title": "Pensionsboxen",
         "content": "Wir sind zwar kein klassischer Einstallerbetrieb, dennoch bieten wir auch Pensionsboxen in kleinem Rahmen an. Ein gutes Stallklima und eine ruhige Atmosphäre sind uns besonders wichtig, wenn Sie ihr Pferd erstklassig versorgt wissen wollen und der Fokus bei ihnen auf der Arbeit mit dem Pferd liegt, sprechen Sie uns gerne an!",
-        "img": "src/assets/angebotTest.jpg"
+        "img": "../src/assets/angebotTest.jpg"
     },
     {
         "id": 4,
         "title": "Aufzucht",
         "content": "Auf unseren großzügigen Weideflächen findet ihr Jungpferd vom Absetzer bis zur Remonte viel Platz zum Toben und Wachsen. Wir bevorzugen dabei kleine Gruppen, auch die Jungpferde verbringen die Nacht in großen Laufboxen. Dadurch sind sie jeden Tag an der Hand und eine bedarfsgerechte Versorgung ist jederzeit gewährleistet.",
-        "img": "src/assets/angebotTest.jpg"
+        "img": "../src/assets/angebotTest.jpg"
     },
     {
         "id": 5,
         "title": "Rentner",
-        "content": "Gerne darf auch ihr Rentner auf unserem großflächigen Weiden seinen Lebensabend genießen. Durch engmaschige Gesundheitskontrollen und hohe Futterqualität können sie uns ihren ehemaligen Sport und Freizeitpartner guten Gewissens anvertrauen. Wir halten sie stets auf dem laufenden und versorgen sie auch gerne mit aktuellen Fotos, damit der Trennungsschmerz etwas gelindert wird. Selbstverständlich bieten wir eine angepasste Fütterung an, und auch die Gabe von Medikamenten oder das Eindecken bei besonders ungemütlichem Wetter sind für uns kein Problem.","img": "src/assets/angebotTest.jpg"
+        "content": "Gerne darf auch ihr Rentner auf unserem großflächigen Weiden seinen Lebensabend genießen. Durch engmaschige Gesundheitskontrollen und hohe Futterqualität können sie uns ihren ehemaligen Sport und Freizeitpartner guten Gewissens anvertrauen. Wir halten sie stets auf dem laufenden und versorgen sie auch gerne mit aktuellen Fotos, damit der Trennungsschmerz etwas gelindert wird. Selbstverständlich bieten wir eine angepasste Fütterung an, und auch die Gabe von Medikamenten oder das Eindecken bei besonders ungemütlichem Wetter sind für uns kein Problem.","img": "../src/assets/angebotTest.jpg"
     }
 ]
