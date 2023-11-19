@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './Angebote.scss'
 import angebote from "../data/angebote.json"
 import {motion} from "framer-motion"
@@ -8,9 +8,18 @@ import Title from '../utils/Title'
 
 export default function Angebote() {
     const [seeOffer, setSeeOffer] = useState(0);
-    // console.log(seeOffer)
+    const [offers, setOffers] = useState([]);
 
     const title = "Unser Angebot"
+
+
+    useEffect(() => {
+      // Fetch offers data from JSON file or API
+      fetch('/data/angebote.json') 
+        .then((response) => response.json())
+        .then((data) => setOffers(data))
+        .catch((error) => console.error('Error fetching offers:', error));
+    }, []);
 
     const meineAngebote = angebote.map(angebot => (
         <motion.div 
