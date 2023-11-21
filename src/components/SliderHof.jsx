@@ -52,6 +52,7 @@ export default function SliderHof() {
             navigation="true"
             pagination="true"
             pagination-clickable="true"
+            keyboard-enabled="true"
             space-between= "50"
             loop= "true"
         >
